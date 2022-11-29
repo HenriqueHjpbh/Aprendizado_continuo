@@ -1,0 +1,11 @@
+numero = int(input('Digite um número para mostrar sua sequencia fibonacci: '))
+termo_1 = 0
+termo_2 = 1
+contador = 3
+print('{} {} '.format(termo_1,termo_2), end='')
+while contador <= numero:
+    termo_3 = termo_1 + termo_2
+    print(f'{termo_3} ', end='')
+    termo_1 = termo_2
+    termo_2 = termo_3
+    contador += 1
